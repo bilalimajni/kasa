@@ -1,0 +1,39 @@
+.bloccart {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+
+.cart {
+
+    margin-bottom: 15px;
+    height: 340px;
+    width: 30%;
+    border-radius: 10px;
+    display: flex;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    position: relative;
+}
+
+.cover {
+    display: flex;
+    height: 340px;
+    width: 100%;
+
+
+    border-radius: 10px;
+    object-fit: cover;
+
+}
+
+.titleAppartement {
+    position: absolute;
+    top: 75%;
+    left: 3%;
+    color: white;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+}

@@ -1,0 +1,20 @@
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.lienNav {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lienAPropos,
+.lienAccueil {
+    color: red;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+}

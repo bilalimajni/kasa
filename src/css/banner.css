@@ -1,0 +1,15 @@
+.blocBanner{
+    width: 100%;
+    
+background: #000000;
+mix-blend-mode: darken;
+margin: 4rem 0rem;
+border-radius: 25px;
+height: 223px;
+}
+.imgBanner{
+    width: 100%;
+    border-radius: 25px;
+    height: 223px;
+    
+}
