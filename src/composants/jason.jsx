@@ -24,7 +24,7 @@
 			"Frigo",
 			"WIFI"
 		],
-		"Mots clés": [
+		"tag": [
 			"Batignolle",
 			"Montmartre"
 		]
@@ -43,7 +43,7 @@
 		],
 		"description": "Profitez du charme de la vie parisienne dans un magnifique appartement. A 3 minutes à pied du Canl Saint Martin, vous serez proche des transports, mais également de nombreux commerces. L'appartement est tout équipé, et possède également un parking pour ceux qui souhaitent se déplacer en voiture.",
 		"héberger": {
-			"name": "Della Case",
+			"nom": "Della Case",
 			"image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
 		},
 		"note": "4",
@@ -56,7 +56,7 @@
 			"Cuisine équipée",
 			"Télévision"
 		],
-		"Mots clés": [
+		"tag": [
 			"Canal Saint-Martin",
 			"République",
 			"Appartement"
@@ -85,7 +85,7 @@
 			"Télévision",
 			"Sèche Cheveux"
 		],
-		"Mots clés": [
+		"tag": [
 			"Buttes Chaumont",
 			"Laumiere",
 			"Studio"
@@ -103,7 +103,7 @@
 		],
 		"description": "Venez découvrir Paris en séjournant dans ce nid douillet au coeur du 11ème. La vue sur le parc résidentiel saura vous reposer de vos longues journées de tourisme dans la capitale française. Et pour les plus fêtards d'entre vous, la rue Jean Pierre Timbaud vous permettra de découvrir la vie nocturne parisienne à seulement 5 minutes de l'appartement.",
 		"héberger": {
-			"name": "Della Case",
+			"nom": "Della Case",
 			"image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-1.jpg"
 		},
 		"note": "3",
@@ -115,7 +115,7 @@
 			"Climatisation",
 			"Télévision"
 		],
-		"Mots clés": [
+		"tag": [
 			"Parmentier",
 			"Marais",
 			"Parc",
@@ -126,7 +126,7 @@
 		"id": "0979876d",
 		"title": "Appartement de Standing - 10e",
 		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg",
-		"photod": [
+		"photos": [
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-1.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-2.jpg",
 			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-4-3.jpg",
@@ -148,7 +148,7 @@
 			"Chambre Séparée",
 			"Parking"
 		],
-		"Mots clés": [
+		"tag": [
 			"Goncourt",
 			"Proches commerces"
 		]
@@ -166,7 +166,7 @@
 		],
 		"description": "Venez vous imprégner de la culture parisienne dans cet ancien studio d'artiste décoré avec goût, au coeur de Montmartre.",
 		"héberger": {
-			"name": "Ligne Rolland",
+			"nom": "Ligne Rolland",
 			"image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-3.jpg"
 		},
 		"note": "5",
@@ -175,7 +175,7 @@
 			"Chambre Séparée",
 			"Parking"
 		],
-		"Mots clés": [
+		"tag": [
 			"Montmartre",
 			"Culture",
 			"Charme"
@@ -206,7 +206,7 @@
 			"Bureau",
 			"Parking"
 		],
-		"Mots clés": [
+		"tag": [
 			"Les transports",
 			"Bon marché",
 			"18eme"
@@ -226,7 +226,7 @@
 		],
 		"description": "Ce superbe appartement vous surprendra par son charme. Entièrement refait à neuf, il est équipé avec goût. La taille des pièces vous fera douter que vous êtes à Paris. Mais il vous suffit de sortir pour voir que vous êtes au coeur des plus belles attractions de Paris : le Louvre, la Tour Eiffel, le Grand Palais sont à deux pas. À vous de venir découvrir Paris !",
 		"héberger": {
-			"name": "Sébastien Fournier",
+			"nom": "Sébastien Fournier",
 			"image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-5.jpg"
 		},
 		"note": "5",
@@ -239,7 +239,7 @@
 			"Lit King Size",
 			"Ascenseur"
 		],
-		"Mots clés": [
+		"tag": [
 			"Luxe",
 			"Tour Eiffel",
 			"T3",
@@ -271,7 +271,7 @@
 			"Wifi",
 			"Parking"
 		],
-		"Mots clés": [
+		"tag": [
 			"Montparnasse",
 			"Commerces",
 			"Famille"
@@ -302,7 +302,7 @@
 			"Wifi",
 			"Ascenseur"
 		],
-		"Mots clés": [
+		"tag": [
 			"Père Lachaise",
 			"11e",
 			"Métro 3",
@@ -332,7 +332,7 @@
 			"Sèche Cheveux",
 			"Wifi"
 		],
-		"Mots clés": [
+		"tag": [
 			"Marais",
 			"Studio",
 			"Parc"
@@ -363,7 +363,7 @@
 			"LA TÉLÉ",
 			"Bouiloire"
 		],
-		"Mots clés": [
+		"tag": [
 			"Marais",
 			"République",
 			"Studio",
@@ -396,7 +396,7 @@
 			"Frigo",
 			"Bouiloire"
 		],
-		"Mots clés": [
+		"tag": [
 			"Forêt",
 			"Nature",
 			"Musée d'Ecouen"
@@ -415,7 +415,7 @@
 		],
 		"description": "Vous cherchez un endroit pour fêter un anniversaire entre amis tout en restant proche de Paris ? Ne cherchez plus ! Entièrement équipée, cette maison est l'endroit idéal pour se regrouper.",
 		"héberger": {
-			"name": "Karen Guillet",
+			"nom": "Karen Guillet",
 			"image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-9.jpg"
 		},
 		"note": "4",
@@ -430,7 +430,7 @@
 			"Cintrés",
 			"Équipements de base"
 		],
-		"Mots clés": [
+		"tag": [
 			"Forêt",
 			"Nature",
 			"Grande maison"
@@ -449,7 +449,7 @@
 		],
 		"description": "Maison T5. Idéale pour grands groupes. 45 minutes de Paris Saint-Lazare.",
 		"héberger": {
-			"name": "Karen Guillet",
+			"nom": "Karen Guillet",
 			"image": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/profile-picture-9.jpg"
 		},
 		"note": "3",
@@ -466,7 +466,7 @@
 			"Micro-Ondes",
 			"Parking"
 		],
-		"Mots clés": [
+		"tag": [
 			"Nature",
 			"Groupe",
 			"Maisons"
@@ -499,7 +499,7 @@
 			"Micro-Ondes",
 			"Parking"
 		],
-		"Mots clés": [
+		"tag": [
 			"La Défense",
 			"Grenier",
 			"Luxe"
@@ -531,7 +531,7 @@
 			"Wifi",
 			"Micro-Ondes"
 		],
-		"Mots clés": [
+		"tag": [
 			"Vue Parc",
 			"Apt de Charme"
 		]
@@ -555,7 +555,7 @@
 			"Wifi",
 			"Micro-Ondes"
 		],
-		"Mots clés": [
+		"tag": [
 			"Vue Parc",
 			"Métros"
 		]
@@ -583,7 +583,7 @@
 			"Wifi",
 			"Micro-Ondes"
 		],
-		"Mots clés": [
+		"tag": [
 			"Studio",
 			"Charmant",
 			"13e"
@@ -610,7 +610,7 @@
 			"Frigo",
 			"Baigneoire"
 		],
-		"Mots clés": [
+		"tag": [
 			"Persienne",
 			"Marais",
 			" Rivoli "

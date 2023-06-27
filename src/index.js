@@ -7,7 +7,7 @@ import Footer from './composants/footer';
 import Banner from './composants/banner';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Appartement from './page/appertement';
-
+import Eror from './composants/eror';
 const root = createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -23,11 +23,15 @@ root.render(
           <Nav />
           <div>Hello world!</div>
         </>} />
+
         <Route path="/:id" element={<>
           <Nav />
-          <div>Hello world!</div>
           <Appartement />
         </>} />
+        <Route path="/*" element={<>
+          <Eror/>
+        </>} />
+        
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

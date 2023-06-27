@@ -1,43 +1,52 @@
-import React from 'react';
-import { useParams, useNavigate, Link } from 'react-router-dom';
+import React from "react";
+import { useParams } from "react-router-dom";
 import Jason from "../composants/jason.jsx";
-
+import Carrouselle from "../composants/carrouselle.jsx";
+import "../css/appartement.css";
+import Eror from "../composants/eror.jsx";
+import About from "../composants/about.jsx";
 
 const Appartement = () => {
   const { id } = useParams();
-  const navigate = useNavigate();
 
   const selected = Jason.find((item) => item.id === id);
 
   if (!selected) {
-    navigate('/error');
-    return null;
+    return <Eror />;
   }
 
   return (
     <div>
-      <div>
-        <img src={selected.photos[0]} alt="" />
-      </div>
+      <Carrouselle selected={selected} />
+
       <div>
         <h2>{selected.title}</h2>
         <p>{selected.location}</p>
-        <p>{selected.description}</p>
+        <div className="blocTag">
+          {selected.tag.map((tag, index) => (
+            <p key={index} className="tag">
+              {tag}
+            </p>
+          ))}
+        </div>
       </div>
-      <div>{selected.héberger.nom}</div>
-      <div>
-        <p></p>
-        <p></p>
-        <p></p>
-      </div>
-      <div>
-       
-      </div>
-      <div>
-        <Link to="/">Retour</Link>
+
+      <div className="blocNomeImage">
+        <p>{selected.héberger.nom}</p>
+        <div className="blocNomeAppartement">
+          <img
+            src={selected.héberger.image}
+            alt=""className="nomeAppartement"
+            
+          />
+          <div>
+            <About titre={selected.description} />
+            <About texte={selected.équipements}/>
+          </div>
+        </div>
       </div>
     </div>
   );
-}
+};
 
 export default Appartement;

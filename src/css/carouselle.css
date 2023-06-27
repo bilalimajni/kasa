@@ -1,0 +1,40 @@
+/* image apparetemnt*/
+
+.blocImageAppartement {
+    width: 100%;
+    height: 415px;
+    position: relative;
+
+}
+
+.imageAppartement {
+    width: 100%;
+    height: 415px;
+    border-radius: 15px;
+}
+
+
+/*carouselle*/
+.blocCarousellegauche {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+
+.blocCarouselleDroite {
+    position: absolute;
+    top: 50%;
+    left: 90%;
+}
+
+img {
+    object-fit: cover;
+}
+
+/*compteur*/
+.compteur {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    color: white;
+}
