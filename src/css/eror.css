@@ -1,0 +1,38 @@
+.text {
+    color: #FF6060;
+    width: 597px;
+    height: auto;
+    font-family: Montserrat;
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 411px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+    width: 100%;
+
+
+}
+
+.messageError {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FF6060;
+
+}
+
+.lienHome {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6060;
+    text-align: center;
+
+}

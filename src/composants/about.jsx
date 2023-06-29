@@ -1,31 +1,26 @@
 import React, { useState } from 'react';
 import '../css/about.css';
 
-const About = ({ titre, texte }) => {
+const About = ({ titre, texte, classeSupplementaire }) => { // Ajoutez la prop "classeSupplementaire"
   const [estTexteVisible, setEstTexteVisible] = useState(false);
 
-  const afficherTexte = () => {
-    setEstTexteVisible(true);
-  };
-
-  const masquerTexte = () => {
-    setEstTexteVisible(false);
+  const toggleTexteVisible = () => {
+    setEstTexteVisible(!estTexteVisible);
   };
 
   return (
-    <div className="onglet">
-      <div className="onglet-titre">
+    <div className={`onglet ${classeSupplementaire}`}> {/* Utilisez la prop "classeSupplementaire" dans la classe */}
+      <div className="titre-onglet" onClick={toggleTexteVisible}>
         <h3>{titre}</h3>
-        {!estTexteVisible && (
-          <img src="flechebas.png" alt="fflechebas" onClick={afficherTexte} />
-        )}
-        {estTexteVisible && (
-          <img src="lechehaut.png" alt="flechehaut" onClick={masquerTexte} className='.flechehigh' />
-        )}
+        <img src={estTexteVisible ? "flechehigh.png" : "flechelow.png"} alt="fleche" />
       </div>
       {estTexteVisible && (
-        <div className="onglet-contenu">
-          <p>{texte}</p>
+        <div className="contenu-onglet">
+          {Array.isArray(texte) ? (
+            texte.map((equipment, index) => <p key={index}>{equipment}</p>)
+          ) : (
+            <p className='textContenu'>{texte}</p>
+          )}
         </div>
       )}
     </div>

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 function Nav() {
   return (
     <nav className='navigation'>
-    <img src="logoKasa.svg" alt="logo" />
+    <img src="logoKasa.svg" alt="logo"className='imgNav' />
     <div className='lienNav'>
      
       <Link to="/">

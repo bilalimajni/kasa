@@ -7,6 +7,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin-top: 60px
+  
 }
 
 footer p {
@@ -16,3 +18,14 @@ footer p {
     font-weight: 500;
     font-size: 24px;
 }
+
+
+
+@media (max-width: 768px) {
+
+ footer p {
+    width: 375px;
+height: 20px;
+text-align: center;
+}}
+

@@ -5,47 +5,31 @@ import Carrouselle from "../composants/carrouselle.jsx";
 import "../css/appartement.css";
 import Eror from "../composants/eror.jsx";
 import About from "../composants/about.jsx";
+import LieuTag from "../composants/lieuTag.jsx";
+import Nav from "../composants/nav.jsx";
 
 const Appartement = () => {
-  const { id } = useParams();
+  const { title } = useParams();
 
-  const selected = Jason.find((item) => item.id === id);
+  const selected = Jason.find((item) => item.title === title);
 
   if (!selected) {
     return <Eror />;
   }
 
   return (
-    <div>
-      <Carrouselle selected={selected} />
-
+    <main>
+      <Nav />
       <div>
-        <h2>{selected.title}</h2>
-        <p>{selected.location}</p>
-        <div className="blocTag">
-          {selected.tag.map((tag, index) => (
-            <p key={index} className="tag">
-              {tag}
-            </p>
-          ))}
-        </div>
-      </div>
+        <Carrouselle selected={selected} />
 
-      <div className="blocNomeImage">
-        <p>{selected.héberger.nom}</p>
-        <div className="blocNomeAppartement">
-          <img
-            src={selected.héberger.image}
-            alt=""className="nomeAppartement"
-            
-          />
-          <div>
-            <About titre={selected.description} />
-            <About texte={selected.équipements}/>
-          </div>
+        <LieuTag selected={selected} />
+        <div className="blocDescriptionÉquipements">
+          <About titre="Description" texte={selected.description} />
+          <About titre="Équipements" texte={selected.équipements} />
         </div>
       </div>
-    </div>
+    </main>
   );
 };
 

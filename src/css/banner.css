@@ -1,16 +1,57 @@
-.blocBanner{
+.blocBanner {
     width: 100%;
-    
-background: #000000;
-mix-blend-mode: darken;
-margin: 4rem 0rem;
-border-radius: 25px;
-height: 223px;
+
+    background: #000000;
+    mix-blend-mode: darken;
+    margin-bottom: 35px;
+    border-radius: 25px;
+    height: 223px;
+    position: relative;
+
 }
-.imgBanner{
+
+.imgBanner {
     width: 100%;
     border-radius: 25px;
     height: 223px;
-    
-    
+
+    background: #000000;
+
+
+
+    opacity: 0.7;
+
+}
+
+.bannerText {
+    position: absolute;
+    top: 23%;
+    left: 27%;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+}
+
+
+@media (max-width: 768px) {
+
+    .bannerText {
+        font-size: 24px;
+        width: 217px;
+        height: 98px;
+        top: 59%;
+        left: 47%;
+        transform: translate(-50%, -50%);
+        margin: 0px;
+        line-height: 38px;
+        text-align: left;
+    }
 }

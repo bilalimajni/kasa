@@ -1,0 +1,20 @@
+@media (max-width: 768px) {
+    .blocNomeImage{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .nomAppartement{
+        text-align: left;
+    }
+    .blocInformation {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    .blocTitreLieu {
+        width: 100%;
+    }
+
+}

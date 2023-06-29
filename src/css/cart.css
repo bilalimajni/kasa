@@ -1,8 +1,11 @@
 .bloccart {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    background: aqua;
+    padding: 33px;
+    background: #F6F6F6;
     
+
 }
 
 .cart {
@@ -12,8 +15,17 @@
     width: 30%;
     border-radius: 10px;
     display: flex;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+   background-color: red;
     position: relative;
+    margin: 15px;
+    opacity: 1;
+}
+.cart:hover{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+
+
+    opacity: 0.5;
+
 }
 
 .cover {
@@ -36,4 +48,62 @@
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
+    width: 295px;
+    height: 52px;
 }
+
+
+/**/
+@media (max-width: 768px) {
+
+    .bloccart {
+        padding: 0px;
+      
+        background: white;
+        
+    
+    }
+    .cart {
+
+        padding: 0px;
+        margin-bottom: 15px;
+        height: 340px;
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        position: relative;
+        margin: 15px;
+    }
+    .titleAppartement {
+        position: absolute;
+        top: 75%;
+        left: 3%;
+
+        width: auto;
+        height: auto;
+    }
+  }
+  
+  @media (min-width: 769px) and (max-width: 1208px){
+    .cart {
+
+      margin: 1%;
+        height: 340px;
+        width: 28%;
+        border-radius: 10px;
+        display: flex;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        position: relative;
+        margin: 2%;
+    }
+    .titleAppartement {
+        position: absolute;
+        top: 70%;
+        left: 3%;
+        font-size:16px;
+        width: 100%;
+        height: auto;
+    }
+  }
+  

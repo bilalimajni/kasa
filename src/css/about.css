@@ -1,3 +1,79 @@
-.flechehigh , .flechehigh{
+.flechehigh,
+.flechehigh {
     background-color: black;
 }
+
+.contenu-onglet {
+    font-size: .75rem;
+
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6060;
+    background-color: #F6F6F6;
+
+  
+    height: Hug (272px);
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px 10px 5px 5px;
+    gap: 10px;
+
+
+}
+
+.onglet {
+    width: 40%;
+}
+
+.textContenu {
+    width: 100%;
+    height: auto;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF6060;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.titre-onglet {
+    display: flex;
+    align-items: center;
+  
+    height: 52px;
+    padding: 10px 20px 10px 10px;
+    border-radius: 10px;
+    background-color: #FF6060;
+    color: white;
+    justify-content: space-between;
+
+}
+
+.blocDescriptionÉquipements {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+
+    .onglet{
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    }
