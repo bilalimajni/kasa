@@ -22,6 +22,9 @@ footer p {
 
 
 @media (max-width: 768px) {
+    .footer{
+        height: 300px;
+    }
 
  footer p {
     width: 375px;

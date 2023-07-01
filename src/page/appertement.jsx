@@ -9,18 +9,21 @@ import LieuTag from "../composants/lieuTag.jsx";
 import Nav from "../composants/nav.jsx";
 
 const Appartement = () => {
-  const { title } = useParams();
+  const { id} = useParams();
 
-  const selected = Jason.find((item) => item.title === title);
+  const selected = Jason.find((item) => item.id === id);
 
   if (!selected) {
     return <Eror />;
   }
 
-  return (
-    <main>
-      <Nav />
-      <div>
+  const renderContent = () => {
+    if (!selected.photos) {
+      return <Eror />;
+    }
+
+    return (
+      <>
         <Carrouselle selected={selected} />
 
         <LieuTag selected={selected} />
@@ -28,7 +31,14 @@ const Appartement = () => {
           <About titre="Description" texte={selected.description} />
           <About titre="Équipements" texte={selected.équipements} />
         </div>
-      </div>
+      </>
+    );
+  };
+
+  return (
+    <main>
+      <Nav />
+      <div>{renderContent()}</div>
     </main>
   );
 };

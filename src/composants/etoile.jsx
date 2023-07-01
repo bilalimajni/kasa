@@ -1,17 +1,26 @@
 import React from 'react';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FaStar } from 'react-icons/fa';
+import "../css/lieuTag.css"
 
-const Stars = ({ count, total }) => {
+const Stars = (props) => {
+  const { selected } = props;
+
+  const generateStars = () => {
+    const stars = [];
+    for (let i = 1; i <= 5; i++) {
+      const starColor = i <= selected.note ? 'orange' : 'grey';
+      stars.push(
+        <span key={i.toString()} className={`housing_page_header_hoster_ratings_star housing_page_header_hoster_ratings_star_${starColor}`}>
+          <FaStar />
+        </span>
+      );
+    }
+    return stars;
+  };
+
   return (
-    <div>
-      {[...Array(total)].map((_, index) => (
-        <FontAwesomeIcon
-          key={index}
-          icon={faStar}
-          className={index < count ? 'starred' : 'stargrey'}
-        />
-      ))}
+    <div className='housing_page_header_hoster_ratings'>
+      {generateStars()}
     </div>
   );
 };

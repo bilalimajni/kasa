@@ -22,7 +22,7 @@ root.render(
          <Footer/>
         </>} />
 
-        <Route path="/:title" element={
+        <Route path="/:id" element={
   <>
     <Appartement />
     <Footer />

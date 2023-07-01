@@ -1,10 +1,46 @@
-@media (max-width: 768px) {
+
+
+
+/* Styles pour les étoiles orange */
+.housing_page_header_hoster_ratings_star {
+    color: orange;
+    
+  }
+  
+  /* Styles pour les étoiles grises */
+  .housing_page_header_hoster_ratings_star_grey {
+    color: grey;
+  }
+  .housing_page_header_hoster_ratings{
+    width: 110px;
+    display: flex;
+    justify-content: space-between;
+   margin-top: 9px;
+  }
+
+  .blocStarsImage{
+    display: flex;
+   align-items: center;
+   flex-direction: column;
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+   .blocStarsImage{
+    display: flex;
+ justify-content: space-between;
+   flex-direction:row-reverse;
+   width: 100%;
+  }
     .blocNomeImage{
         margin-top: 15px;
         margin-bottom: 15px;
     }
     .nomAppartement{
         text-align: left;
+        margin: 0px;
+        padding: 0px;
     }
     .blocInformation {
         display: flex;
@@ -16,5 +52,10 @@
     .blocTitreLieu {
         width: 100%;
     }
+     
+      .tag{
+        font-size: 10px;
+      }
+     
 
 }
